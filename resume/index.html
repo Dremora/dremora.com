@@ -72,6 +72,20 @@
         text-align: justify;
       }
 
+      .dontprint {
+        color: #f44;
+        text-transform: uppercase;
+        text-align: center;
+        display: none;
+        font-weight: 700;
+      }
+
+      @media print {
+        .dontprint {
+          display: block;
+        }
+      }
+
       .location {
         font-weight: bold;
         color: #666;
@@ -86,6 +100,7 @@
       }
 
       .job {
+        page-break-inside: avoid;
         /*padding: 0.7rem 0;*/
       }
 
@@ -131,6 +146,10 @@
         font-weight: bold;
       }
 
+      .project {
+        page-break-inside: avoid;
+      }
+
       .project .link {
         font-size: 0.9rem;
         padding-left: 3rem;
@@ -144,6 +163,10 @@
         clear: left;
         margin-left: 1rem;
         font-size: 0.9rem;
+      }
+
+      .education {
+        page-break-inside: avoid;
       }
 
       .education + .education {
@@ -199,20 +222,21 @@
         border-bottom: 1px dotted #999;
       }
 
-        h1, h2, h3 {
-          page-break-after: avoid;
-          page-break-inside: avoid;
-        }
+      h1, h2, h3 {
+        page-break-after: avoid;
+        page-break-inside: avoid;
+      }
 
-        p {
-          page-break-inside: avoid;
-        }
+      p {
+        page-break-inside: avoid;
+      }
 
-        @page { margin: 1cm 0.5cm 0.5cm }
+      @page { margin: 1cm 0.5cm 0.5cm }
 </style>
 </head>
 <body>
 
+<p class="dontprint">Please do not print this, save the trees</p>
 <h1>Kirill Korolyov</h1>
 <div class="info">
   <a href="mailto:kirill.korolyov@gmail.com" class="email">kirill.korolyov@gmail.com</a> | <span class="location">London, UK</span> | <span class="phone">+44 74 7939 3498</span>
@@ -292,7 +316,7 @@
   <p>foo_musicbrainz is a component for foobar2000 media player. It can tag files by fetching data from MusicBrainz. It is written in <span class="technology">C++</span>/<span class="technology">ATL</span> with a bit of preprocessor metaprogramming.</p>
 </section>
 
-<section class="project" style="page-break-inside: avoid;">
+<section class="project">
   <h3>redump.org <a class="link" href="http://redump.org">redump.org</a></h3>
 
   <p>The goal behind the project is to preserve old video games released on optical media in the best way possible. The website essentially provides a database of checksums of optical media copies (“dumps”). A strong community has evolved around the website over the years, the new data is being added on a daily basis. redump.org is backed by <span class="technology">PHP</span> and <span class="technology">MySQL</span>. <em>Note: the project is currently maintained by someone else.</em></p>
