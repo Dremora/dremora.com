@@ -11,6 +11,13 @@
         background: #efefef;
       }
 
+      .root {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+      }
+
       p {
         text-align: center;
         color: #555;
@@ -21,15 +28,28 @@
         color: #777;
         font-weight: normal;
         text-align: center;
+        font-weight: 300;
+        margin-bottom: 6px;
       }
 
       p.name {
         line-height: 2.4;
         font-size: 1.2rem;
+        margin-top: 0;
+        font-weight: 600;
+      }
+
+      p.me {
+        flex-shrink: 1;
+        margin-top: 0;
       }
 
       p.me span::before {
         content: '← ';
+      }
+
+      p.links {
+        margin-top: 0;
       }
 
       p.links span::after {
@@ -75,25 +95,31 @@
         opacity: 1;
       }
 
-      a.email {
+      .footer {
+        margin-top: 0;
+      }
+
+      a.link {
         color: #555;
         transition: color 0.3s;
         -webkit-transition: color 0.3s;
       }
 
-      a.email:hover {
+      a.link:hover {
         color: #111;
       }
   </style>
 </head>
 <body>
-<h1>Hello,</h1>
-<p class="name">My name is Kirill Korolyov.</p>
-<p class="me"><img src="me.png"><span>Well, that’s me.</span></p>
-<p class="links"><span>You can find me here</span>
-<a href="https://twitter.com/Dremora"><img class="social" src="twitter.png" alt="Twitter"></a>
-<a href="https://github.com/Dremora"><img class="social" src="github.png" alt="GitHub"></a>
-</p>
-<p>Drop me a line at <a class="email" href="mailto:kirill.korolyov@gmail.com">kirill.korolyov@gmail.com</a>.</p>
+<div class="root">
+  <h1>Hello,</h1>
+  <p class="name">My name is Kirill Korolyov.</p>
+  <p class="me"><img src="me.png"><span>Well, that’s me.</span></p>
+  <p class="links"><span>You can find me here</span>
+  <a href="https://twitter.com/Dremora"><img class="social" src="twitter.png" alt="Twitter"></a>
+  <a href="https://github.com/Dremora"><img class="social" src="github.png" alt="GitHub"></a>
+  </p>
+  <p class="footer"><a class="link" href="resume/">Hire me</a> or drop me a line at <a class="link" href="mailto:kirill.korolyov@gmail.com">kirill.korolyov@gmail.com</a>.</p>
+</div>
 </body>
 </html>
