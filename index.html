@@ -9,13 +9,18 @@
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         margin: 0;
         background: #efefef;
+        font-weight: 300;
+        overflow: auto;
       }
 
       .root {
         height: 100vh;
         display: flex;
         flex-direction: column;
-        overflow: auto;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        box-sizing: border-box;
       }
 
       p {
@@ -39,68 +44,13 @@
         font-weight: 600;
       }
 
-      p.me {
-        flex-shrink: 1;
-        margin-top: 0;
-      }
-
-      p.me span::before {
-        content: '← ';
-      }
-
-      p.links {
-        margin-top: 0;
-      }
-
-      p.links span::after {
-        content: ' →';
-      }
-
-      @media (max-width: 550px) {
-        p.me span {
-          display: block;
-        }
-
-        p.me span::before {
-          content: '↑ ';
-        }
-
-        p.links span {
-          display: block;
-          padding-bottom: 1rem;
-        }
-
-        p.links span::after {
-          content: ' ↓';
-        }
-      }
-
-      @media (max-width: 400px) {
-        p.me img {
-          width: 100%;
-        }
-      }
-
-      p img {
-        vertical-align: middle;
-      }
-
-      img.social {
-        opacity: 0.68;
-        transition: opacity 0.3s;
-        -webkit-transition: opacity 0.3s;
-      }
-
-      img.social:hover {
-        opacity: 1;
-      }
-
       .footer {
         margin-top: 0;
       }
 
       a.link {
         color: #555;
+        font-weight: 400;
         transition: color 0.3s;
         -webkit-transition: color 0.3s;
       }
@@ -114,11 +64,7 @@
 <div class="root">
   <h1>Hello,</h1>
   <p class="name">My name is Kirill Korolyov.</p>
-  <p class="me"><img src="me.png"><span>Well, that’s me.</span></p>
-  <p class="links"><span>You can find me here</span>
-  <a href="https://twitter.com/Dremora"><img class="social" src="twitter.png" alt="Twitter"></a>
-  <a href="https://github.com/Dremora"><img class="social" src="github.png" alt="GitHub"></a>
-  </p>
+  <p>I <a class="link" target="_blank" href="https://github.com/Dremora">write code</a>, <a class="link" target="_blank" href="https://500px.com/dremora">take photos<a/> (<a class="link" target="_blank" href="https://www.flickr.com/photos/dremora/">and then some</a>) and <a class="link" target="_blank" href="http://soundcloud.com/kirill-korolyov">make music</a>. Sometimes I <a class="link" target="_blank" href="https://twitter.com/Dremora">tweet</a> or <a class="link" target="_blank" href="https://medium.com/@Dremora/">blog</a>.</p>
   <p class="footer"><a class="link" href="resume/">Hire me</a> or drop me a line at <a class="link" href="mailto:kirill.korolyov@gmail.com">kirill.korolyov@gmail.com</a>.</p>
 </div>
 </body>
