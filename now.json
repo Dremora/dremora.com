@@ -1,6 +1,5 @@
 {
   "version": 2,
   "name": "dremora.com",
-  "alias": "dremora.com",
-  "builds": [{ "src": "index.html", "use": "@now/static" }]
+  "alias": "dremora.com"
 }
