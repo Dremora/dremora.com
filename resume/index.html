@@ -93,6 +93,10 @@
         color: #666;
       }
 
+      .contract {
+        color: #666;
+      }
+
       .email:link {
         font-size: 1rem;
       }
@@ -102,7 +106,7 @@
       }
 
       .job {
-        page-break-inside: avoid;
+        break-inside: avoid;
         /*padding: 0.7rem 0;*/
       }
 
@@ -149,7 +153,7 @@
       }
 
       .project {
-        page-break-inside: avoid;
+        break-inside: avoid;
       }
 
       .project .link {
@@ -168,7 +172,7 @@
       }
 
       .education {
-        page-break-inside: avoid;
+        break-inside: avoid;
       }
 
       .education + .education {
@@ -227,12 +231,12 @@
       h1,
       h2,
       h3 {
-        page-break-after: avoid;
-        page-break-inside: avoid;
+        break-after: avoid;
+        break-inside: avoid;
       }
 
       p {
-        page-break-inside: avoid;
+        break-inside: avoid;
       }
 
       @page {
@@ -247,43 +251,85 @@
       <a href="mailto:kirill.korolyov@gmail.com" class="email"
         >kirill.korolyov@gmail.com</a
       >
-      | <span class="location">London, UK</span>
+      | <span class="location">London, UK</span>|
+      <span class="contract">Contract only</span>
     </div>
 
     <h2><span>Summary</span></h2>
     <p>
-      I have worked with various web technologies since 2010, predominantly
-      focusing on the frontend. However, my area of interest spans beyond web. I
-      am a fast and eager learner of new technologies, programming languages and
-      paradigms. I am a perfectionist by nature but I know how and when to think
-      pragmatically. I'm an admirer of functional programming, good design and
-      cats.
-    </p>
-    <p>
-      I am currently based in <span class="location">East London, UK</span>, and
-      looking for a <span class="technology">React.js</span>,
-      <span class="technology">Elm</span> or
-      <span class="technology">Elixir</span> contract.
+      I build web applications with React, while focusing on accessibility,
+      performance, developer experience, types, automation and design systems. I
+      have worked with various web technologies since 2006, predominantly the
+      frontend. However, my area of interest spans beyond web. I am a fast and
+      avid learner of new toolsm patterns, programming languages and paradigms.
+      I am a perfectionist by nature but I know how and when to think
+      pragmatically. I continuously sharpen the saw and share my knowledge. I'm
+      an admirer of functional programming, good design and ducks.
     </p>
 
-    <h2><span>Tech</span></h2>
+    <h2><span>Curent stack of choice</span></h2>
     <p>
-      <strong>JavaScript/Web family</strong>: HTML5, CSS3, ES2016, React,
-      Node.js, Ember, Angular, Backbone, Marionette, Express, Bootstrap, D3,
-      LESS, CoffeeScript, Underscore, Bacon.js, require.js, Grunt, Gulp,
-      Webpack, Broccoli, Handlebars, Leaflet, Mocha, Sinon, Chai, Karma,
-      Selenium Webriver.
-    </p>
-    <p>
-      <strong>Databases</strong>: MySQL, Elasticsearch, CouchDB, PostgreSQL,
-      MongoDB.
-    </p>
-    <p>
-      <strong>Everything else</strong>: Git, Sketch, PHP, Ruby, Rails, Sinatra,
-      Elixir, Java, Scala, Lift, C, C++.
+      HTML, CSS, JavaScript, React, Node.js, Typescript, GraphQL, Next.js,
+      Webpack, ESLint, Jest, Prettier, styled-components, react-testing-library,
+      git, Sketch, CircleCI, now.sh
     </p>
 
     <h2><span>Experience</span></h2>
+    <section class="job">
+      <h3>
+        <span class="title">Frontend lead</span> at
+        <span class="company">Eurostar</span>
+      </h3>
+      <p class="date">Started: November, 2018</p>
+      <p>
+        <em
+          >Support of
+          <a target="_blank" href="https://www.eurostar.com/"
+            >Eurostar main website</a
+          >.</em
+        >
+        In my first lead role I've inherited an older codebase and a team
+        without any developers. My responsibilities included hiring and
+        coaching, managing complex, sometimes incompatible expectations from a
+        lot of stakeholders while reducing technical debt and increasing
+        performance of the site. I've introduced regular dev-only meetings to
+        discuss potential improvements to the code and process, 1-to-1 catchups
+        to discuss impediments with individual developers, and facilitated
+        continuous pair-programming and collaboration. I've pushed for a number
+        of technical initiatives, including the new CMS (<span
+          class="technology"
+          >Sanity</span
+        >) and migration to the single page application model.
+      </p>
+    </section>
+
+    <section class="job">
+      <h3>
+        <span class="title">Frontend developer</span> at
+        <span class="company">Eurostar</span>
+      </h3>
+      <p class="date">November, 2017 to November, 2018</p>
+      <p>
+        <em
+          >Development of
+          <a target="_blank" href="https://packages.eurostar.com/"
+            >packages booking platform</a
+          >
+          for Eurostar.</em
+        >
+        I've been with the project nearly from the start and worked in a close
+        collaboration with the designer, UX and other teams. We've built a
+        <span class="technology">React</span> SPA with
+        <span class="technology">GraphQL</span> backend. Following successful
+        launch, I've continued implementing new features and tightening
+        integration with other parts of the business. Despite this being my
+        first commercial React project, I have quickly learned advanced React
+        patterns and gotchas and have been making sure our code doesn't fall
+        behind. Capitalising on my strive for pixel-perfect design, our team has
+        build a shared component library, which later became the basis for the
+        company-wide design system.
+      </p>
+    </section>
 
     <section class="job">
       <h3>
@@ -303,8 +349,8 @@
         from the start and, being the only constant team member in almost 2
         years, have worked on pretty much every feature. I have learned to deal
         with frequently changing and incomplete requirements (often improving
-        these requirements myself) and complex business domain. I've kept
-        improving overall quality of the codebase through refactoring, better
+        these requirements myself) and complex business domain. I kept improving
+        overall quality of the codebase through refactoring, better
         abstractions, gradual migrations to new technologies, conventions and
         linters. Inspired by React and Elm, I've designed solutions for app's
         state and change management. Having worked a lot on simplifying,
@@ -501,11 +547,12 @@
       </h3>
 
       <p>
-        The goal behind the project is to preserve old video games released on
-        optical media in the best way possible. The website essentially provides
-        a database of checksums of optical media copies (“dumps”). A strong
-        community has evolved around the website over the years, the new data is
-        being added on a daily basis. redump.org is backed by
+        Started in 2006. The goal behind the project is to preserve old video
+        games released on optical media in the best way possible. The website
+        essentially provides a database of checksums of optical media copies
+        (“dumps”). A strong community has evolved around the website over the
+        years, the new data is being added on a daily basis. redump.org is
+        backed by
         <span class="technology">PHP</span> and
         <span class="technology">MySQL</span>.
         <em>Note: the project is currently maintained by someone else.</em>
