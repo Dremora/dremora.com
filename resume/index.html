@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>Kirill Korolyov</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style type="text/css">
+  <head>
+    <meta charset="utf-8" />
+    <title>Kirill Korolyov</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
       body {
         font-family: "Palatino";
         padding: 1rem 2rem;
@@ -13,7 +13,8 @@
         max-width: 900px;
       }
 
-      a:link, a:visited {
+      a:link,
+      a:visited {
         color: #222;
         font-weight: bold;
         text-decoration: none;
@@ -44,8 +45,9 @@
         position: relative;
       }
 
-      h2 span:before, h2 span:after {
-        content: '';
+      h2 span:before,
+      h2 span:after {
+        content: "";
         width: 1000px;
         border-bottom: 1px solid #eee;
         position: absolute;
@@ -126,11 +128,11 @@
       }
 
       .job p.date::before {
-        content: ' / ';
+        content: " / ";
       }
 
       .job p.date::after {
-        content: ' / ';
+        content: " / ";
       }
 
       .job p {
@@ -214,7 +216,7 @@
       }
 
       .certifications .name::after {
-        content: ' — ';
+        content: " — ";
       }
 
       .certifications .date {
@@ -222,7 +224,9 @@
         border-bottom: 1px dotted #999;
       }
 
-      h1, h2, h3 {
+      h1,
+      h2,
+      h3 {
         page-break-after: avoid;
         page-break-inside: avoid;
       }
@@ -231,153 +235,403 @@
         page-break-inside: avoid;
       }
 
-      @page { margin: 1cm 0.5cm 0.5cm }
-</style>
-</head>
-<body>
+      @page {
+        margin: 1cm 0.5cm 0.5cm;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="dontprint">Please do not print this, save the trees</p>
+    <h1>Kirill Korolyov</h1>
+    <div class="info">
+      <a href="mailto:kirill.korolyov@gmail.com" class="email"
+        >kirill.korolyov@gmail.com</a
+      >
+      | <span class="location">London, UK</span>
+    </div>
 
-<p class="dontprint">Please do not print this, save the trees</p>
-<h1>Kirill Korolyov</h1>
-<div class="info">
-  <a href="mailto:kirill.korolyov@gmail.com" class="email">kirill.korolyov@gmail.com</a> | <span class="location">London, UK</span>
-</div>
+    <h2><span>Summary</span></h2>
+    <p>
+      I have worked with various web technologies since 2010, predominantly
+      focusing on the frontend. However, my area of interest spans beyond web. I
+      am a fast and eager learner of new technologies, programming languages and
+      paradigms. I am a perfectionist by nature but I know how and when to think
+      pragmatically. I'm an admirer of functional programming, good design and
+      cats.
+    </p>
+    <p>
+      I am currently based in <span class="location">East London, UK</span>, and
+      looking for a <span class="technology">React.js</span>,
+      <span class="technology">Elm</span> or
+      <span class="technology">Elixir</span> contract.
+    </p>
 
-<h2><span>Summary</span></h2>
-<p>I have worked with various web technologies since 2010, predominantly focusing on the frontend. However, my area of interest spans beyond web. I am a fast and eager learner of new technologies, programming languages and paradigms. I am a perfectionist by nature but I know how and when to think pragmatically. I'm an admirer of functional programming, good design and cats.
-</p>
-<p>I am currently based in <span class="location">East London, UK</span>, and looking for a <span class="technology">React.js</span>, <span class="technology">Elm</span> or <span class="technology">Elixir</span> contract.</p>
+    <h2><span>Tech</span></h2>
+    <p>
+      <strong>JavaScript/Web family</strong>: HTML5, CSS3, ES2016, React,
+      Node.js, Ember, Angular, Backbone, Marionette, Express, Bootstrap, D3,
+      LESS, CoffeeScript, Underscore, Bacon.js, require.js, Grunt, Gulp,
+      Webpack, Broccoli, Handlebars, Leaflet, Mocha, Sinon, Chai, Karma,
+      Selenium Webriver.
+    </p>
+    <p>
+      <strong>Databases</strong>: MySQL, Elasticsearch, CouchDB, PostgreSQL,
+      MongoDB.
+    </p>
+    <p>
+      <strong>Everything else</strong>: Git, Sketch, PHP, Ruby, Rails, Sinatra,
+      Elixir, Java, Scala, Lift, C, C++.
+    </p>
 
-<h2><span>Tech</span></h2>
-<p><strong>JavaScript/Web family</strong>: HTML5, CSS3, ES2016, React, Node.js, Ember, Angular, Backbone, Marionette, Express, Bootstrap, D3, LESS, CoffeeScript, Underscore, Bacon.js, require.js, Grunt, Gulp, Webpack, Broccoli, Handlebars, Leaflet, Mocha, Sinon, Chai, Karma, Selenium Webriver.</p>
-<p><strong>Databases</strong>: MySQL, Elasticsearch, CouchDB, PostgreSQL, MongoDB.</p>
-<p><strong>Everything else</strong>: Git, Sketch, PHP, Ruby, Rails, Sinatra, Elixir, Java, Scala, Lift, C, C++.</p>
+    <h2><span>Experience</span></h2>
 
-<h2><span>Experience</span></h2>
+    <section class="job">
+      <h3>
+        <span class="title">Frontend developer</span> at
+        <span class="company">Kayako</span>
+      </h3>
+      <p class="date">March, 2015 to January, 2017</p>
+      <p>
+        <em
+          >Development of
+          <a target="_blank" href="https://www.kayako.com/">Kayako</a>'s
+          <a target="_blank" href="https://www.kayako.com/free-trial"
+            >frontend Ember app</a
+          >.</em
+        >
+        By far the largest application I've worked on. I have joined the project
+        from the start and, being the only constant team member in almost 2
+        years, have worked on pretty much every feature. I have learned to deal
+        with frequently changing and incomplete requirements (often improving
+        these requirements myself) and complex business domain. I've kept
+        improving overall quality of the codebase through refactoring, better
+        abstractions, gradual migrations to new technologies, conventions and
+        linters. Inspired by React and Elm, I've designed solutions for app's
+        state and change management. Having worked a lot on simplifying,
+        modernizing and modularizing our CSS code, I became a go-to guy for all
+        questions related to styling.
+      </p>
+    </section>
 
-<section class="job">
-  <h3><span class="title">Frontend developer</span> at <span class="company">Kayako</span></h3>
-  <p class="date">March, 2015 to January, 2017</p>
-  <p><em>Development of <a target="_blank" href="https://www.kayako.com/">Kayako</a>'s <a target="_blank" href="https://www.kayako.com/free-trial">frontend Ember app</a>.</em> By far the largest application I've worked on. I have joined the project from the start and, being the only constant team member in almost 2 years, have worked on pretty much every feature. I have learned to deal with frequently changing and incomplete requirements (often improving these requirements myself) and complex business domain. I've kept improving overall quality of the codebase through refactoring, better abstractions, gradual migrations to new technologies, conventions and linters. Inspired by React and Elm, I've designed solutions for app's state and change management. Having worked a lot on simplifying, modernizing and modularizing our CSS code, I became a go-to guy for all questions related to styling.
-  </p>
-</section>
+    <section class="job">
+      <h3>
+        <span class="title">Co-founder &amp; developer</span> at
+        <span class="company">Squelo</span>
+      </h3>
+      <p class="date">June, 2015 to August, 2015</p>
+      <p>
+        <em
+          >Development of a professional social network with
+          <span class="technology">React.js</span> and
+          <span class="technology">Node.js</span>.</em
+        >
+      </p>
+    </section>
 
-<section class="job">
-  <h3><span class="title">Co-founder &amp; developer</span> at <span class="company">Squelo</span></h3>
-  <p class="date">June, 2015 to August, 2015</p>
-  <p><em>Development of a professional social network with <span class="technology">React.js</span> and <span class="technology">Node.js</span>.</em></p>
-</section>
+    <section class="job">
+      <h3>
+        <span class="title">Consultant</span> at
+        <span class="company">Concrete</span>
+      </h3>
+      <p class="date">November, 2014 to February, 2015</p>
+      <p>
+        <em
+          >Architecture and development of a web application for the next
+          generation of Concrete platform.</em
+        >
+        Borrowing lots of ideas from Ember.js, Angular.js, as well as my
+        previous experiences in Ericsson and Indigo, I've been responsible for
+        designing a scalable and maintainable application architecture, which
+        keeps developers away from writing spaghetti code and pushes towards
+        creating isolated and reusable component-based code. I've also delivered
+        a number of application features.
+      </p>
+    </section>
 
-<section class="job">
-  <h3><span class="title">Consultant</span> at <span class="company">Concrete</span></h3>
-  <p class="date">November, 2014 to February, 2015</p>
-  <p><em>Architecture and development of a web application for the next generation of Concrete platform.</em> Borrowing lots of ideas from Ember.js, Angular.js, as well as my previous experiences in Ericsson and Indigo, I've been responsible for designing a scalable and maintainable application architecture, which keeps developers away from writing spaghetti code and pushes towards creating isolated and reusable component-based code. I've also delivered a number of application features.</p>
-</section>
+    <section class="job">
+      <h3>
+        <span class="title">Consultant</span> at
+        <span class="company">CityHook/Indigo</span>
+      </h3>
+      <p class="date">February, 2014 to November, 2014</p>
+      <p>
+        <em>Web client for Indigo customers.</em> My scope of responsibilities
+        includes frontend and some parts of the backend. Designed as a
+        single-page <span class="technology">Angular.js</span> application, the
+        frontend is build using <span class="technology">Webpack</span> and
+        <span class="technology">Gulp</span>.
+      </p>
+    </section>
 
-<section class="job">
-  <h3><span class="title">Consultant</span> at <span class="company">CityHook/Indigo</span></h3>
-  <p class="date">February, 2014 to November, 2014</p>
-  <p><em>Web client for Indigo customers.</em> My scope of responsibilities includes frontend and some parts of the backend. Designed as a single-page <span class="technology">Angular.js</span> application, the frontend is build using <span class="technology">Webpack</span> and <span class="technology">Gulp</span>.</p>
-</section>
+    <section class="job">
+      <h3>
+        <span class="title">Software Engineer</span> at
+        <span class="company">Ericsson</span>
+      </h3>
+      <p class="date">June, 2012 to September, 2014</p>
+      <p>
+        <em
+          >Highly scalable client-side architecture evolving around a custom web
+          framework.</em
+        >
+        Originally designed as an upper layer of the new network management
+        system, the framework is now being used by Ericsson teams worldwide.
+      </p>
+      <p>
+        My previous responsibilities included supporting web based application
+        for visualizing correlated/aggregated network data with backend in
+        <span class="technology">Scala</span> and
+        <span class="technology">Lift</span>.
+      </p>
+      <p>
+        I have also worked on a prototype of a policy manager for
+        self-optimizing networks which was created using an alpha version of the
+        aforementioned framework.
+      </p>
+    </section>
 
-<section class="job">
-  <h3><span class="title">Software Engineer</span> at <span class="company">Ericsson</span></h3>
-  <p class="date">June, 2012 to September, 2014</p>
-  <p><em>Highly scalable client-side architecture evolving around a custom web framework.</em> Originally designed as an upper layer of the new network management system, the framework is now being used by Ericsson teams worldwide.</p>
-  <p>My previous responsibilities included supporting web based application for visualizing correlated/aggregated network data with backend in <span class="technology">Scala</span> and <span class="technology">Lift</span>.</p>
-  <p>I have also worked on a prototype of a policy manager for self-optimizing networks which was created using an alpha version of the aforementioned framework.</p>
-</section>
+    <section class="job">
+      <h3>
+        <span class="title">Software Engineer</span> at
+        <span class="company">AssistUnion</span>
+      </h3>
+      <p class="date">January, 2011 to August, 2011</p>
+      <p>
+        <em>Tour operator information aggregator</em> written in
+        <span class="technology">PHP</span> and
+        <span class="technology">JavaScript</span>. The goal was to collect
+        information from multiple tour operators (such as destinations, prices,
+        hotels etc.) and present it in a unified way, allowing user to perform
+        search and compare similar tours from different operators.
+      </p>
+      <p>
+        I have also worked on a
+        <span class="technology">Model View ViewModel</span> web framework
+        written in <span class="technology">Ruby</span>.
+      </p>
+    </section>
 
-<section class="job">
-  <h3><span class="title">Software Engineer</span> at <span class="company">AssistUnion</span></h3>
-  <p class="date">January, 2011 to August, 2011</p>
-  <p><em>Tour operator information aggregator</em> written in <span class="technology">PHP</span> and <span class="technology">JavaScript</span>. The goal was to collect information from multiple tour operators (such as destinations, prices, hotels etc.) and present it in a unified way, allowing user to perform search and compare similar tours from different operators.
-  </p>
-  <p>I have also worked on a <span class="technology">Model View ViewModel</span> web framework written in <span class="technology">Ruby</span>.</p>
-</section>
+    <section class="job">
+      <h3>
+        <span class="title">QA/Developer</span> at
+        <span class="company">innoWate</span>
+      </h3>
+      <p class="date">July, 2010 to December, 2010</p>
+      <p>
+        innoWate specializes in social network games production. I performed a
+        variety of tasks, ranging from testing and game content administration
+        to social network integration and Russian to English localisation. I
+        have also created a set of internal tools to aid myself with these
+        tasks.
+      </p>
+    </section>
 
-<section class="job">
-  <h3><span class="title">QA/Developer</span> at <span class="company">innoWate</span></h3>
-  <p class="date">July, 2010 to December, 2010</p>
-  <p>innoWate specializes in social network games production. I performed a variety of tasks, ranging from testing and game content administration to social network integration and Russian to English localisation. I have also created a set of internal tools to aid myself with these tasks.</p>
-</section>
+    <section class="job">
+      <h3>
+        <span class="title">Web Developer</span> at
+        <span class="company">Medialink</span>
+      </h3>
+      <p class="date">June, 2009 to March, 2010</p>
+      <p>
+        <em>Creation of 20 websites for the internal CMS</em> using
+        <span class="technology">PHP</span>,
+        <span class="technology">HTML</span>,
+        <span class="technology">CSS</span> and
+        <span class="technology">JavaScript</span>.
+      </p>
+    </section>
 
-<section class="job">
-  <h3><span class="title">Web Developer</span> at <span class="company">Medialink</span></h3>
-  <p class="date">June, 2009 to March, 2010</p>
-  <p><em>Creation of 20 websites for the internal CMS</em> using <span class="technology">PHP</span>, <span class="technology">HTML</span>, <span class="technology">CSS</span> and <span class="technology">JavaScript</span>.</p>
-</section>
+    <section class="job">
+      <h3>
+        <span class="title">Web Developer</span> at
+        <span class="company">Zero Zoom Zone</span>
+      </h3>
+      <p class="date">September, 2007 to October, 2007</p>
+      <p>
+        I have worked in a small team developing
+        <em>online advertisement portal</em> written in
+        <span class="technology">PHP</span>,
+        <span class="technology">MySQL</span>,
+        <span class="technology">HTML</span>,
+        <span class="technology">CSS</span>.
+      </p>
+    </section>
 
-<section class="job">
-  <h3><span class="title">Web Developer</span> at <span class="company">Zero Zoom Zone</span></h3>
-  <p class="date">September, 2007 to October, 2007</p>
-  <p>I have worked in a small team developing <em>online advertisement portal</em> written in <span class="technology">PHP</span>, <span class="technology">MySQL</span>, <span class="technology">HTML</span>, <span class="technology">CSS</span>.</p>
-</section>
+    <h2><span>Open-source and non-commercial projects</span></h2>
+    <p>
+      All of my open-source software, as well as contributions to other
+      projects, is available at
+      <a href="https://github.com/Dremora">github.com/Dremora</a>. The major
+      ones are listed below:
+    </p>
 
-<h2><span>Open-source and non-commercial projects</span></h2>
-<p>All of my open-source software, as well as contributions to other projects, is available at <a href="https://github.com/Dremora">github.com/Dremora</a>. The major ones are listed below:</p>
+    <section class="project">
+      <h3>
+        foo_musicbrainz
+        <a class="link" href="https://github.com/Dremora/foo_musicbrainz"
+          >github.com/Dremora/foo_musicbrainz</a
+        >
+      </h3>
 
-<section class="project">
-  <h3>foo_musicbrainz <a class="link" href="https://github.com/Dremora/foo_musicbrainz">github.com/Dremora/foo_musicbrainz</a></h3>
+      <p>
+        foo_musicbrainz is a component for foobar2000 media player. It can tag
+        files by fetching data from MusicBrainz. It is written in
+        <span class="technology">C++</span>/<span class="technology">ATL</span>
+        with a bit of preprocessor metaprogramming.
+      </p>
+    </section>
 
-  <p>foo_musicbrainz is a component for foobar2000 media player. It can tag files by fetching data from MusicBrainz. It is written in <span class="technology">C++</span>/<span class="technology">ATL</span> with a bit of preprocessor metaprogramming.</p>
-</section>
+    <section class="project">
+      <h3>
+        Techbikers website
+        <a class="link" href="https://github.com/Techbikers/techbikers"
+          >https://github.com/Techbikers/techbikers</a
+        >
+      </h3>
 
-<section class="project">
-  <h3>Techbikers website <a class="link" href="https://github.com/Techbikers/techbikers">https://github.com/Techbikers/techbikers</a></h3>
+      <p>
+        Development of new functionality and maintenance of the existing
+        codebase written in <span class="technology">React</span>.
+      </p>
+    </section>
 
-  <p>Development of new functionality and maintenance of the existing codebase written in <span class="technology">React</span>.</p>
-</section>
+    <section class="project">
+      <h3>
+        redump.org <a class="link" href="http://redump.org">redump.org</a>
+      </h3>
 
-<section class="project">
-  <h3>redump.org <a class="link" href="http://redump.org">redump.org</a></h3>
+      <p>
+        The goal behind the project is to preserve old video games released on
+        optical media in the best way possible. The website essentially provides
+        a database of checksums of optical media copies (“dumps”). A strong
+        community has evolved around the website over the years, the new data is
+        being added on a daily basis. redump.org is backed by
+        <span class="technology">PHP</span> and
+        <span class="technology">MySQL</span>.
+        <em>Note: the project is currently maintained by someone else.</em>
+      </p>
+    </section>
 
-  <p>The goal behind the project is to preserve old video games released on optical media in the best way possible. The website essentially provides a database of checksums of optical media copies (“dumps”). A strong community has evolved around the website over the years, the new data is being added on a daily basis. redump.org is backed by <span class="technology">PHP</span> and <span class="technology">MySQL</span>. <em>Note: the project is currently maintained by someone else.</em></p>
-</section>
+    <h2><span>Education</span></h2>
+    <section class="education">
+      <h3><span class="degree">M.Sc. in Applied Software Technology</span></h3>
+      <p class="details">
+        <span class="college"
+          >Dublin Institute of Technology (Dublin, Ireland)</span
+        >, <span class="date">2011 to 2012</span>
+      </p>
+      <p>
+        Got awarded "<span class="award"
+          >First place MSc in Applied Software Technology</span
+        >” plus a gold medal. Gave a series of math and programming tutorials
+        for classmates.
+      </p>
+    </section>
 
-<h2><span>Education</span></h2>
-<section class="education">
-  <h3><span class="degree">M.Sc. in Applied Software Technology</span></h3>
-  <p class="details"><span class="college">Dublin Institute of Technology (Dublin, Ireland)</span>, <span class="date">2011 to 2012</span></p>
-  <p>Got awarded "<span class="award">First place MSc in Applied Software Technology</span>” plus a gold medal. Gave a series of math and programming tutorials for classmates.</p>
-</section>
+    <section class="education">
+      <h3>
+        <span class="degree">B.Sc. in Electronic Engineering</span> (<span
+          class="programme"
+          >Telecommunications and computer networks</span
+        >)
+      </h3>
+      <p class="details">
+        <span class="college"
+          >Transporta un Sakaru Instituts (Riga, Latvia)</span
+        >, <span class="date">2007 to 2011</span>
+      </p>
+      <p>
+        Got awarded “<span class="award"
+          >Best student in Telecommunications and computer networks</span
+        >”.
+      </p>
+      <p>
+        Thesis:
+        <span class="thesis">Developing a peer-to-peer network framework</span>.
+        Source code:
+        <a href="https://github.com/Dremora/foonet"
+          >github.com/Dremora/foonet</a
+        >
+      </p>
+    </section>
 
-<section class="education">
-  <h3><span class="degree">B.Sc. in Electronic Engineering</span> (<span class="programme">Telecommunications and computer networks</span>)</h3>
-  <p class="details"><span class="college">Transporta un Sakaru Instituts (Riga, Latvia)</span>, <span class="date">2007 to 2011</span></p>
-  <p>Got awarded “<span class="award">Best student in Telecommunications and computer networks</span>”.</p>
-  <p>Thesis: <span class="thesis">Developing a peer-to-peer network framework</span>. Source code: <a href="https://github.com/Dremora/foonet">github.com/Dremora/foonet</a></p>
-</section>
+    <section class="education">
+      <h3>
+        <span class="degree">Erasmus Intensive Programme</span>
+        <span class="programme"
+          >in developing open source system expertise in Europe</span
+        >
+      </h3>
+      <p class="details">
+        <span class="college"
+          >Helsinki Metropolia University of Applied Sciences (Espoo,
+          Finland)</span
+        >, <span class="date">March, 2010</span>
+      </p>
+      <p>
+        Our team has developed a cloud render farm. Technologies used inlude
+        <span class="technology">Ruby</span>,
+        <span class="technology">Sinatra</span>,
+        <span class="technology">MongoDB</span>,
+        <span class="technology">Blender</span>.
+      </p>
+    </section>
 
-<section class="education">
-  <h3><span class="degree">Erasmus Intensive Programme</span> <span class="programme">in developing open source system expertise in Europe</span></h3>
-  <p class="details"><span class="college">Helsinki Metropolia University of Applied Sciences (Espoo, Finland)</span>, <span class="date">March, 2010</span></p>
-  <p>Our team has developed a cloud render farm. Technologies used inlude <span class="technology">Ruby</span>, <span class="technology">Sinatra</span>, <span class="technology">MongoDB</span>, <span class="technology">Blender</span>.</p>
-</section>
+    <section class="education">
+      <h3>
+        <span class="degree"
+          >International University exchange program “Erasmus”</span
+        >
+      </h3>
+      <p class="details">
+        <span class="college">University of Žilina (Žilina, Slovakia)</span>,
+        <span class="date">February, 2010 to June, 2010</span>
+      </p>
+    </section>
 
-<section class="education">
-  <h3><span class="degree">International University exchange program “Erasmus”</span></h3>
-  <p class="details"><span class="college">University of Žilina (Žilina, Slovakia)</span>, <span class="date">February, 2010 to June, 2010</span></p>
-</section>
+    <section class="education">
+      <h3><span class="degree">Online Education</span></h3>
+      <ul>
+        <li>
+          <span class="subject">“Introduction to Artificial Intelligence”</span>
+          from <span class="college">Udacity</span>
+        </li>
+        <li>
+          <span class="subject">“Machine Learning”</span> from
+          <span class="college">Coursera</span>
+        </li>
+        <li>
+          <span class="subject">“Cryptography I”</span> from
+          <span class="college">Coursera</span>
+        </li>
+        <li>
+          <span class="subject">“Algorithms: Design and Analysis”</span> from
+          <span class="college">Coursera</span>
+        </li>
+        <li>
+          <span class="subject"
+            >“Functional Programming Principles in Scala”</span
+          >
+          from <span class="college">Coursera</span>
+        </li>
+        <li>
+          <span class="subject">“Principles of Reactive Programming”</span> from
+          <span class="college">Coursera</span>
+        </li>
+      </ul>
+    </section>
 
-<section class="education">
-  <h3><span class="degree">Online Education</span></h3>
-  <ul>
-    <li><span class="subject">“Introduction to Artificial Intelligence”</span> from <span class="college">Udacity</span></li>
-    <li><span class="subject">“Machine Learning”</span> from <span class="college">Coursera</span></li>
-    <li><span class="subject">“Cryptography I”</span> from <span class="college">Coursera</span></li>
-    <li><span class="subject">“Algorithms: Design and Analysis”</span> from <span class="college">Coursera</span></li>
-    <li><span class="subject">“Functional Programming Principles in Scala”</span> from <span class="college">Coursera</span></li>
-    <li><span class="subject">“Principles of Reactive Programming”</span> from <span class="college">Coursera</span></li>
-  </ul>
-</section>
+    <h2><span>Certifications</span></h2>
 
-<h2><span>Certifications</span></h2>
-
-<section class="certifications">
-  <ul>
-    <li><span class="name">OCPJP 6 (Oracle Certified Professional Java SE Programmer)</span> <span class="date">May, 2012</span></li>
-  </ul>
-</section>
-
-</body>
+    <section class="certifications">
+      <ul>
+        <li>
+          <span class="name"
+            >OCPJP 6 (Oracle Certified Professional Java SE Programmer)</span
+          >
+          <span class="date">May, 2012</span>
+        </li>
+      </ul>
+    </section>
+  </body>
 </html>
