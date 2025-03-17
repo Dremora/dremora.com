@@ -30,6 +30,22 @@ function JobDescription({ children }: { children: React.ReactNode }) {
   );
 }
 
+function JobDescriptionList({ children }: { children: React.ReactNode }) {
+  return (
+    <ul className="leading-[1.3] text-justify ml-2 my-[1em] break-inside-avoid clear-left list-disc list-inside">
+      {children}
+    </ul>
+  );
+}
+
+function JobDescriptionItem({ children }: { children: React.ReactNode }) {
+  return (
+    <li className="leading-[1.3] text-justify my-1 break-inside-avoid clear-left list-disc list-inside">
+      {children}
+    </li>
+  );
+}
+
 function Project({ children }: { children: React.ReactNode }) {
   return (
     <section className="break-inside-avoid border-dotted border-[#eee] [&:not(:last-child)]:border-b">
@@ -149,7 +165,7 @@ function Contract({ children }: { children: React.ReactNode }) {
 
 export default function Resume() {
   return (
-    <div className="font-['Palatino'] py-4 px-8 mx-auto text-[#555] max-w-[900px] box-content leading-[normal]">
+    <div className="font-['Palatino'] py-4 px-8 mx-auto text-[#444] max-w-[900px] box-content leading-[normal]">
       <p className="leading-[1.3] my-[1em] break-inside-avoid text-[#f44] uppercase text-center hidden print:block font-[700]">
         Please do not print this, save the trees
       </p>
@@ -163,26 +179,160 @@ export default function Resume() {
         >
           kirill.korolyov@gmail.com
         </a>{" "}
-        | <Location>London, UK</Location>| <Contract>Contract only</Contract>
+        | <Location>Remote</Location> | <Contract>Contract only</Contract>
       </div>
       <SectionHeading>Summary</SectionHeading>
       <p className="leading-[1.3] text-justify my-[1em] break-inside-avoid">
-        I build web applications with React, while focusing on accessibility,
-        performance, developer experience, types, automation and design systems.
-        I have experience leading teams, mentoring and hiring. I have worked
-        predominantly on greenfield projects, but don’t shy away from improving
-        existing codebases. I am a fast and avid learner of new tools, patterns,
-        programming languages and paradigms. I am a perfectionist by nature but
-        I know how and when to think pragmatically. I continuously sharpen the
-        saw and share my knowledge.
+        With an engineering career spanning 20 years, I am confident in my
+        ability to deliver high-quality output across any tech stack. I have
+        experience working in both large organizations and small startups,
+        building products independently and as part of a team.
       </p>
-      <SectionHeading>Curent stack of choice</SectionHeading>
       <p className="leading-[1.3] text-justify my-[1em] break-inside-avoid">
-        HTML, CSS, JavaScript, React, Node.js, TypeScript, GraphQL, Next.js,
-        Webpack, ESLint, Jest, Prettier, styled-components, Storybook,
-        react-testing-library, git, Figma, CircleCI, Vercel
+        My expertise primarily lies in developing web applications, but I have
+        also worked on backends, native apps, CLI tools, and visualizations,
+        among other areas.
+      </p>
+
+      <p className="leading-[1.3] text-justify my-[1em] break-inside-avoid">
+        Some of the topics I am most passionate about—and can discuss for
+        hours—include functional programming, type systems, performance
+        optimization, developer experience, user experience, accessibility,
+        design systems, and automation.
+      </p>
+
+      <p className="leading-[1.3] text-justify my-[1em] break-inside-avoid">
+        I am a fast and avid learner, always eager to adopt new tools, patterns,
+        programming languages, and paradigms. A perfectionist by nature, I also
+        understand when to take a pragmatic approach. No matter the project, I
+        strive to leave the codebase, product, team, and organization better
+        than I found them.
+      </p>
+
+      <p className="leading-[1.3] text-justify my-[1em] break-inside-avoid">
+        I have been an early adopter of AI for work and continuously refine its
+        use to improve efficiency, accelerate learning, enhance creativity, and
+        automate complex or repetitive tasks. However, I always ensure a
+        thorough understanding and review of AI-generated output.
       </p>
       <SectionHeading>Experience</SectionHeading>
+      <Job>
+        <JobHeading>
+          <JobTitle>Software Engineer</JobTitle> at <Company>Blockvis</Company>
+        </JobHeading>
+        <JobDate>September, 2024 to March, 2025</JobDate>
+        <JobDescription>
+          I have worked on a variety of unrelated projects:
+        </JobDescription>
+        <JobDescriptionList>
+          <JobDescriptionItem>
+            A rendering engine implemented in GLSL shaders, focusing on specific
+            geometric patterns and custom fine-tuned anti-aliasing, along with
+            an associated debugging UI built with React and TypeScript.
+          </JobDescriptionItem>
+          <JobDescriptionItem>
+            Data visualization software utilizing GLSL shaders for rendering on
+            the canvas, Rust (compiled to WebAssembly) for CPU-intensive data
+            transformations, and a server-side CLI application for data
+            analysis—also written in Rust and sharing code with its WebAssembly
+            counterpart.
+          </JobDescriptionItem>
+          <JobDescriptionItem>
+            A web game built with React and integrated with Telegram, featuring
+            3D visualizations and off-screen canvas rendering in a web worker.
+            Additionally, I developed an associated web portal that integrates
+            with smart contracts.
+          </JobDescriptionItem>
+        </JobDescriptionList>
+      </Job>
+      <Job>
+        <JobHeading>
+          <JobTitle>Lead Software Engineer</JobTitle> at{" "}
+          <Company>Flick</Company>
+        </JobHeading>
+        <JobDate>January, 2022 to September, 2024</JobDate>
+        <JobDescription>
+          During my time at Flick, I completely transformed the product by
+          continuously advocating for improved engineering practices while also
+          building new features.
+        </JobDescription>
+
+        <JobDescriptionList>
+          <JobDescriptionItem>
+            In close collaboration with the CEO (who was also the designer), I
+            built an extensive design system from scratch, enabling the team to
+            achieve pixel-perfect implementation of the designs.
+          </JobDescriptionItem>
+          <JobDescriptionItem>
+            Migrated the entire codebase to the strictest TypeScript compiler
+            settings and introduced a comprehensive set of ESLint rules.
+          </JobDescriptionItem>
+          <JobDescriptionItem>
+            Helped consolidate multiple repositories into a single monorepo and
+            merged multiple apps into one.
+          </JobDescriptionItem>
+          <JobDescriptionItem>
+            Revised all tooling and significantly optimized the CI pipeline,
+            reducing build times and cutting costs.
+          </JobDescriptionItem>
+          <JobDescriptionItem>
+            Designed a new filesystem convention for better codebase navigation
+            and created a structured plan for gradual migration.
+          </JobDescriptionItem>
+        </JobDescriptionList>
+        <JobDescription>
+          These initiatives led to a significantly improved developer and
+          end-user experience, a substantial reduction in bugs, faster delivery
+          of new features, enhanced maintainability for existing features, and
+          improved web performance metrics. While many of these efforts were
+          self-driven, I never stopped working on new product features, ensuring
+          that the team’s speed and ability to deliver were never compromised.
+        </JobDescription>
+      </Job>
+      <Job>
+        <JobHeading>
+          <JobTitle>
+            Contractor → Senior Fullstack Engineer → Technical Lead
+          </JobTitle>{" "}
+          at <Company>Tractable</Company>
+        </JobHeading>
+        <JobDate>March, 2020 to January, 2022</JobDate>
+        <JobDescriptionList>
+          <JobDescriptionItem>
+            Developed a full-stack application for loss adjusters and body shops
+            to display car damage claims and AI-generated assessment results.
+            Each insurer required a customized version with tailored
+            functionality.
+          </JobDescriptionItem>
+          <JobDescriptionItem>
+            Built an application to showcase Tractable’s AI capabilities to
+            insurers.
+          </JobDescriptionItem>
+        </JobDescriptionList>
+        <JobDescription>
+          Tech stack: <Technology>React</Technology>,{" "}
+          <Technology>TypeScript</Technology>, <Technology>Next.js</Technology>,{" "}
+          <Technology>vanilla-extract</Technology>,{" "}
+          <Technology>Node.js</Technology>,<Technology>GraphQL</Technology>,{" "}
+          <Technology>Postgres</Technology>, <Technology>Prisma</Technology>,{" "}
+          <Technology>Apollo Server</Technology>. <Technology>DDD</Technology>{" "}
+          used for the backend architecture.
+        </JobDescription>
+      </Job>
+      <Job>
+        <JobHeading>
+          <JobTitle>Frontend contractor</JobTitle> at{" "}
+          <Company>Trainline</Company>
+        </JobHeading>
+        <JobDate>February, 2020 to March, 2020</JobDate>
+        <JobDescription>
+          Migration to Google Analytics with heavy focus on testing and type
+          system. Technologies used inlude <Technology>React</Technology>,{" "}
+          <Technology>Redux</Technology>, <Technology>Enzyme</Technology>,{" "}
+          <Technology>TypeScript</Technology>,{" "}
+          <Technology>redux-observable</Technology>.
+        </JobDescription>
+      </Job>
       <Job>
         <JobHeading>
           <JobTitle>Frontend contractor</JobTitle> at{" "}
@@ -299,13 +449,13 @@ export default function Resume() {
             </a>
             .
           </em>{" "}
-          By far the largest application I’ve worked on. I have joined the
-          project from the start and, being the only constant team member in
-          almost 2 years, have worked on pretty much every feature. I have
-          learned to deal with frequently changing and incomplete requirements
-          (often improving these requirements myself) and complex business
-          domain. I kept improving overall quality of the codebase through
-          refactoring, better abstractions, gradual migrations to new
+          By far the largest application I’ve worked on at that point. I have
+          joined the project from the start and, being the only constant team
+          member in almost 2 years, have worked on pretty much every feature. I
+          have learned to deal with frequently changing and incomplete
+          requirements (often improving these requirements myself) and complex
+          business domain. I kept improving overall quality of the codebase
+          through refactoring, better abstractions, gradual migrations to new
           technologies, conventions and linters. Inspired by{" "}
           <Technology>React</Technology> and <Technology>Elm</Technology>, I’ve
           designed solutions for app’s state and change management. Having
