@@ -170,7 +170,7 @@ export default function Resume() {
         I build web applications with React, while focusing on accessibility,
         performance, developer experience, types, automation and design systems.
         I have experience leading teams, mentoring and hiring. I have worked
-        predominantly on greenfield projects, but don't shy away from improving
+        predominantly on greenfield projects, but don’t shy away from improving
         existing codebases. I am a fast and avid learner of new tools, patterns,
         programming languages and paradigms. I am a perfectionist by nature but
         I know how and when to think pragmatically. I continuously sharpen the
@@ -206,7 +206,7 @@ export default function Resume() {
         <JobDate>February, 2020 to March, 2020</JobDate>
         <JobDescription>
           <em>
-            Migration of Trainline's mobile and desktop web applications to
+            Migration of Trainline’s mobile and desktop web applications to
             Google Analytics with extensive test coverage.
           </em>{" "}
           Technologies include <Technology>React</Technology>,{" "}
@@ -231,14 +231,14 @@ export default function Resume() {
             </a>
             .
           </em>{" "}
-          In my first lead role I've inherited an older codebase and a team
+          In my first lead role I’ve inherited an older codebase and a team
           without any developers. My responsibilities included hiring and
           coaching, managing complex, sometimes incompatible expectations from a
           lot of stakeholders while reducing technical debt and increasing
-          performance of the site. I've introduced regular dev-only meetings to
+          performance of the site. I’ve introduced regular dev-only meetings to
           discuss potential improvements to the code and process, 1-to-1
           catchups to discuss impediments with individual developers, and
-          facilitated continuous pair-programming and collaboration. I've pushed
+          facilitated continuous pair-programming and collaboration. I’ve pushed
           for a number of technical initiatives, including the new CMS (
           <Technology>Sanity</Technology>) and migration to the single page
           application model.
@@ -261,14 +261,14 @@ export default function Resume() {
             </a>{" "}
             for Eurostar.
           </em>{" "}
-          I've been with the project nearly from the start and worked in a close
-          collaboration with the designer, UX and other teams. We've built a{" "}
+          I’ve been with the project nearly from the start and worked in a close
+          collaboration with the designer, UX and other teams. We’ve built a{" "}
           <Technology>React</Technology> SPA with{" "}
           <Technology>GraphQL</Technology> backend. Following successful launch,
-          I've continued implementing new features and tightening integration
+          I’ve continued implementing new features and tightening integration
           with other parts of the business. Despite this being my first
           commercial React project, I have quickly learned advanced React
-          patterns and gotchas and have been making sure our code doesn't fall
+          patterns and gotchas and have been making sure our code doesn’t fall
           behind. Capitalising on my strive for pixel-perfect design, our team
           has build a shared component library, it later became the basis for
           the company-wide design system (which I gave an internal talk on).
@@ -289,7 +289,7 @@ export default function Resume() {
             >
               Kayako
             </a>
-            's{" "}
+            ’s{" "}
             <a
               className="text-[#222] font-bold no-underline hover:underline"
               href="https://www.kayako.com/free-trial"
@@ -299,7 +299,7 @@ export default function Resume() {
             </a>
             .
           </em>{" "}
-          By far the largest application I've worked on. I have joined the
+          By far the largest application I’ve worked on. I have joined the
           project from the start and, being the only constant team member in
           almost 2 years, have worked on pretty much every feature. I have
           learned to deal with frequently changing and incomplete requirements
@@ -307,8 +307,8 @@ export default function Resume() {
           domain. I kept improving overall quality of the codebase through
           refactoring, better abstractions, gradual migrations to new
           technologies, conventions and linters. Inspired by{" "}
-          <Technology>React</Technology> and <Technology>Elm</Technology>, I've
-          designed solutions for app's state and change management. Having
+          <Technology>React</Technology> and <Technology>Elm</Technology>, I’ve
+          designed solutions for app’s state and change management. Having
           worked a lot on simplifying, modernizing and modularizing our CSS
           code, I became a go-to guy for all questions related to styling.
         </JobDescription>
@@ -339,10 +339,10 @@ export default function Resume() {
           </em>{" "}
           Borrowing lots of ideas from <Technology>Ember.js</Technology>,{" "}
           <Technology>Angular.js</Technology>, as well as my previous
-          experiences in Ericsson and Indigo, I've been responsible for
+          experiences in Ericsson and Indigo, I’ve been responsible for
           designing a scalable and maintainable application architecture, which
           keeps developers away from writing spaghetti code and pushes towards
-          creating isolated and reusable component-based code. I've also
+          creating isolated and reusable component-based code. I’ve also
           delivered a number of application features.
         </JobDescription>
       </Job>
@@ -495,7 +495,7 @@ export default function Resume() {
           <EducationDate>2011 to 2012</EducationDate>
         </EducationDetails>
         <EducationDescription>
-          Got awarded "
+          Got awarded “
           <Award>First place MSc in Applied Software Technology</Award>” plus a
           gold medal. Gave a series of math and programming tutorials for
           classmates.
