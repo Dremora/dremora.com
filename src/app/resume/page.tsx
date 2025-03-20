@@ -309,8 +309,8 @@ export default function Resume() {
             facilitating seamless data exchange between applications and AI
             services. Implemented Domain-Driven Design (DDD) principles in the
             backend architecture, leading to more maintainable and scalable
-            codebase. Integrated Kafka to reliably process and store data
-            returned from the AI pipeline.
+            codebase. Integrated Kafka to reliably process and store data in
+            Postgres returned from the AI pipeline.
           </JobDescriptionItem>
           <JobDescriptionItem>
             Built an application to showcase Tractable’s AI capabilities to
