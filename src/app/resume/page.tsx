@@ -313,6 +313,11 @@ export default function Resume() {
             Postgres returned from the AI pipeline.
           </JobDescriptionItem>
           <JobDescriptionItem>
+            Lead the migration of the entire company’s codebase to GitHub,
+            ensuring a smooth and timely transition and minimal disruption to
+            the teams.
+          </JobDescriptionItem>
+          <JobDescriptionItem>
             Built an application to showcase Tractable’s AI capabilities to
             insurers.
           </JobDescriptionItem>
