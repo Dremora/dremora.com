@@ -226,15 +226,14 @@ export default function Resume() {
         </JobDescription>
         <JobDescriptionList>
           <JobDescriptionItem>
-            Developed server-side CLI application for data analysis using Rust,
-            ensuring efficient data processing and sharing code with WebAssembly
-            counterparts.
+            Server-side CLI application for data analysis implemented using
+            Rust, ensuring efficient data processing and sharing code with
+            WebAssembly counterparts.
           </JobDescriptionItem>
           <JobDescriptionItem>
-            Engineered data visualization software, utilizing Rust (compiled to
-            WebAssembly) for CPU-intensive data transformations enhancing
-            performance and scalability, and using GLSL shaders for efficient
-            rendering.
+            Data visualization software utilizing Rust (compiled to WebAssembly)
+            for CPU-intensive data transformations enhancing performance and
+            scalability, and using GLSL shaders for efficient rendering.
           </JobDescriptionItem>
           <JobDescriptionItem>
             A rendering engine implemented in GLSL shaders, focusing on specific
