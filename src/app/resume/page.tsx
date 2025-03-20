@@ -183,15 +183,15 @@ export default function Resume() {
       </div>
       <SectionHeading>Summary</SectionHeading>
       <p className="leading-[1.3] text-justify my-[1em] break-inside-avoid">
-        With an engineering career spanning 20 years, I am confident in my
-        ability to deliver high-quality output across any tech stack. I have
-        experience working in both large organizations and small startups,
-        building products independently and as part of a team.
+        With 20 years of experience in software engineering, I specialize in
+        full-stack development with React and Node.js, delivering
+        high-performance, scalable and user-friendly applications. I have built
+        and maintained complex systems, contributing across the entire
+        development lifecycle, from architecture to deployment.
       </p>
       <p className="leading-[1.3] text-justify my-[1em] break-inside-avoid">
-        My expertise primarily lies in developing web applications, but I have
-        also worked on backends, native apps, CLI tools, and visualizations,
-        among other areas.
+        While my primary focus is web applications, I have also worked on native
+        apps, CLI tools, and accelerated graphics, among other areas.
       </p>
 
       <p className="leading-[1.3] text-justify my-[1em] break-inside-avoid">
@@ -226,16 +226,20 @@ export default function Resume() {
         </JobDescription>
         <JobDescriptionList>
           <JobDescriptionItem>
+            Developed server-side CLI application for data analysis using Rust,
+            ensuring efficient data processing and sharing code with WebAssembly
+            counterparts.
+          </JobDescriptionItem>
+          <JobDescriptionItem>
+            Engineered data visualization software, utilizing Rust (compiled to
+            WebAssembly) for CPU-intensive data transformations enhancing
+            performance and scalability, and using GLSL shaders for efficient
+            rendering.
+          </JobDescriptionItem>
+          <JobDescriptionItem>
             A rendering engine implemented in GLSL shaders, focusing on specific
             geometric patterns and custom fine-tuned anti-aliasing, along with
             an associated debugging UI built with React and TypeScript.
-          </JobDescriptionItem>
-          <JobDescriptionItem>
-            Data visualization software utilizing GLSL shaders for rendering on
-            the canvas, Rust (compiled to WebAssembly) for CPU-intensive data
-            transformations, and a server-side CLI application for data
-            analysis—also written in Rust and sharing code with its WebAssembly
-            counterpart.
           </JobDescriptionItem>
           <JobDescriptionItem>
             A web game built with React and integrated with Telegram, featuring
@@ -292,7 +296,7 @@ export default function Resume() {
       <Job>
         <JobHeading>
           <JobTitle>
-            Contractor → Senior Fullstack Engineer → Technical Lead
+            Contractor / Senior Fullstack Engineer / Technical Lead
           </JobTitle>{" "}
           at <Company>Tractable</Company>
         </JobHeading>
@@ -302,7 +306,12 @@ export default function Resume() {
             Developed a full-stack application for loss adjusters and body shops
             to display car damage claims and AI-generated assessment results.
             Each insurer required a customized version with tailored
-            functionality.
+            functionality. Developed backend APIs with Node.js and GraphQL,
+            facilitating seamless data exchange between applications and AI
+            services. Implemented Domain-Driven Design (DDD) principles in the
+            backend architecture, leading to more maintainable and scalable
+            codebase. Integrated Kafka to reliably process and store data
+            returned from the AI pipeline.
           </JobDescriptionItem>
           <JobDescriptionItem>
             Built an application to showcase Tractable’s AI capabilities to
@@ -315,8 +324,7 @@ export default function Resume() {
           <Technology>vanilla-extract</Technology>,{" "}
           <Technology>Node.js</Technology>,<Technology>GraphQL</Technology>,{" "}
           <Technology>Postgres</Technology>, <Technology>Prisma</Technology>,{" "}
-          <Technology>Apollo Server</Technology>. <Technology>DDD</Technology>{" "}
-          used for the backend architecture.
+          <Technology>Apollo Server</Technology>, <Technology>Kafka</Technology>
         </JobDescription>
       </Job>
       <Job>
