@@ -313,9 +313,15 @@ export default function Resume() {
             Postgres returned from the AI pipeline.
           </JobDescriptionItem>
           <JobDescriptionItem>
-            Lead the migration of the entire company’s codebase to GitHub,
-            ensuring a smooth and timely transition and minimal disruption to
-            the teams.
+            Led the migration of the entire company’s codebase from BitBucket to
+            GitHub, including establishing new CI/CD pipelines where necessary,
+            access controls, and security policies. Successfully coordinated
+            with multiple teams to ensure a smooth transition with zero downtime
+            and minimal disruption to development workflows.
+          </JobDescriptionItem>
+          <JobDescriptionItem>
+            Established regular meetings of the company-wide Frontend Guild, and
+            set the foundations for a new design system and a component library.
           </JobDescriptionItem>
           <JobDescriptionItem>
             Built an application to showcase Tractable’s AI capabilities to
