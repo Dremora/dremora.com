@@ -222,7 +222,10 @@ export default function Resume() {
         </JobHeading>
         <JobDate>September, 2024 to March, 2025</JobDate>
         <JobDescription>
-          I have worked on a variety of unrelated projects:
+          I have worked on a variety of unrelated projects involving{" "}
+          <Technology>Rust</Technology>, <Technology>GLSL</Technology>,
+          <Technology>blockchains</Technology>, and{" "}
+          <Technology>WebAssembly</Technology>:
         </JobDescription>
         <JobDescriptionList>
           <JobDescriptionItem>
