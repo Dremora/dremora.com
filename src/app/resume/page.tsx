@@ -371,22 +371,6 @@ export default function Resume() {
       </Job>
       <Job>
         <JobHeading>
-          <JobTitle>Frontend contractor</JobTitle> at{" "}
-          <Company>Trainline</Company>
-        </JobHeading>
-        <JobDate>February, 2020 to March, 2020</JobDate>
-        <JobDescription>
-          <em>
-            Migration of Trainline’s mobile and desktop web applications to
-            Google Analytics with extensive test coverage.
-          </em>{" "}
-          Technologies include <Technology>React</Technology>,{" "}
-          <Technology>Enzyme</Technology>, <Technology>Redux</Technology>,{" "}
-          <Technology>redux-observable</Technology>.
-        </JobDescription>
-      </Job>
-      <Job>
-        <JobHeading>
           <JobTitle>Frontend lead</JobTitle> at <Company>Eurostar</Company>
         </JobHeading>
         <JobDate>November, 2018 to October, 2019</JobDate>
