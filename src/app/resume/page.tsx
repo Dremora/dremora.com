@@ -181,6 +181,11 @@ export default function Resume() {
         </a>{" "}
         | <Location>Remote</Location> | <Contract>Contract only</Contract>
       </div>
+
+      <div className="text-center text-xs pt-1 font-medium">
+        Providing software development services through Pixel Perfect
+        Development, LLC, a U.S.-registered company
+      </div>
       <SectionHeading>Summary</SectionHeading>
       <p className="leading-[1.3] text-justify my-[1em] break-inside-avoid">
         With 20 years of experience in software engineering, I specialize in
@@ -216,6 +221,34 @@ export default function Resume() {
         thorough understanding and review of AI-generated output.
       </p>
       <SectionHeading>Experience</SectionHeading>
+      <Job>
+        <JobHeading>
+          <JobTitle>Founder & Principal Software Engineer</JobTitle> at{" "}
+          <Company>Pixel Perfect Development</Company>
+        </JobHeading>
+
+        <JobDate>September, 2024 to Present</JobDate>
+
+        <JobDescription>
+          Founded and operate Pixel Perfect Development, a software consultancy
+          specializing in full-stack web development, with a focus on React and
+          Node.js applications.
+        </JobDescription>
+      </Job>
+
+      <Job>
+        <JobHeading>
+          <JobTitle>Co-Founder & CPO</JobTitle> at <Company>Duo</Company>
+        </JobHeading>
+
+        <JobDate>April, 2025 to Present</JobDate>
+
+        <JobDescription>
+          Revolutionizing the way people discover dancing events and connect
+          with other dancers.
+        </JobDescription>
+      </Job>
+
       <Job>
         <JobHeading>
           <JobTitle>Software Engineer</JobTitle> at <Company>Blockvis</Company>
