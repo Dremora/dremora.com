@@ -188,8 +188,8 @@ export default function Resume() {
       </div>
       <SectionHeading>Summary</SectionHeading>
       <p className="leading-[1.3] text-justify my-[1em] break-inside-avoid">
-        With 20 years of experience in software engineering, I specialize in
-        full-stack development with React and Node.js, delivering
+        With 15 years of commercial experience in software engineering, I
+        specialize in full-stack development with React and Node.js, delivering
         high-performance, scalable and user-friendly applications. I have built
         and maintained complex systems, contributing across the entire
         development lifecycle, from architecture to deployment.
